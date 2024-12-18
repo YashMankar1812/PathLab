@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagnostic Center and Pathology</title>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="bg-yellow-400 text-black">
+    <!-- Top Navbar -->
+    <div class="flex flex-wrap items-center justify-around px-4 md:px-6 py-2">
+      <!-- Navigation Links -->
+      <div class="hidden md:flex flex-wrap space-x-4 lg:space-x-6 text-sm font-semibold">
+        <a href="#" class="text-blue-600">PATIENTS</a>
+        <a href="#" class="hover:text-blue-600">DOCTORS</a>
+        <a href="#" class="hover:text-blue-600">BUSINESS PARTNERSHIP</a>
+        <a href="#" class="hover:text-blue-600">ABOUT US</a>
+        <a href="#" class="hover:text-blue-600">INVESTORS</a>
+        <a href="#" class="hover:text-blue-600">CONTACT US</a>
+        <a href="#" class="hover:text-blue-600">BLOGS</a>
+        <a href="#" class="hover:text-blue-600">FAQs</a>
+      </div>
+
+      <!-- Welcome User -->
+      <div class="text-blue-600 text-sm flex items-center mb-2 md:mb-0">
+        <svg class="text-2xl mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422A12.042 12.042 0 0118 16.34C18 20.627 14.418 24 10 24c-4.418 0-8-3.373-8-7.66a12.042 12.042 0 01-.161-1.762L12 14z" />
+        </svg>
+        <span>Welcome Guest User</span>
+        <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Sub Navbar -->
+    <div class="bg-white flex items-center justify-between px-4 md:px-6 py-4 shadow-md">
+      <img src="https://uat-cdn.drlallab.com/2023-06/logo-header-2.webp" alt="Logo" class="h-10 md:h-12 pr-8">
+
+      <!-- Links -->
+      <div class="flex justify-center md:justify-start space-x-4 lg:space-x-8 text-gray-700 text-sm">
+        <a href="#" class="hover:text-gray-950">Book a Test</a>
+        <a href="#" class="hover:text-gray-950">Nearest Center</a>
+        <a href="#" class="hover:text-gray-950">Download Report</a>
+        <a href="#" class="hover:text-gray-950">Special Programs</a>
+        <a href="#" class="hover:text-gray-950">Promotions & Discounts</a>
+      </div>
+
+      <!-- Search Inputs -->
+      <div class="flex items-center space-x-2 ">
+        <span class="text-gray-600 hidden sm:inline ">Delhi</span>
+        <div class="relative">
+          <input type="text" placeholder="Search Location" class="border border-gray-300 rounded p-2 pl-8 ">
+          <svg class="absolute left-2 top-3 text-gray-500 w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 10a5 5 0 100-10 5 5 0 000 10z" />
+          </svg>
+        </div>
+        <div class="relative">
+          <input type="text" placeholder="Search Test & Package" class="border border-gray-300 rounded p-2 pl-8">
+          <svg class="absolute left-2 top-3 text-gray-500 w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 10a5 5 0 100-10 5 5 0 000 10z" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Cart and ABHA Button -->
+      <div class="flex items-center space-x-4">
+        <div class="relative">
+          <svg class="text-2xl text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 12h12l3-12H3z" />
+          </svg>
+          <span class="absolute -top-2 -right-2 bg-blue-600 text-white text-xs rounded-full px-2">0</span>
+        </div>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded text-sm">Create/Link Your ABHA</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  
+<!-- slider  -->
+
+
+ <div class="w-full max-w-screen-lg mx-auto my-4">
+  <!-- Slider Container -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <img
+          src="assets/1.jpeg"
+          alt="Smart Report"
+          class="rounded-lg"
+        />
+      </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <img
+          src="assets/2.jpeg"
+          alt="Color Coded Analysis"
+          class="rounded-lg"
+        />
+      </div>
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <img
+          src="assets/3.jpeg"
+          alt="Health Tips"
+          class="rounded-lg"
+        />
+      </div>
+      <!-- Slide 4 -->
+      <div class="swiper-slide">
+        <img
+          src="assets/4.jpeg"
+          alt="Health Tips"
+          class="rounded-lg"
+        />
+      </div>
+      <!-- Slide 5 -->
+      <div class="swiper-slide">
+        <img
+          src="assets/5.jpeg"
+          alt="Health Tips"
+          class="rounded-lg"
+        />
+      </div>
+    </div>
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Navigation Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
+
+
+<!-- sec with images  -->
+
+<section class="bg-blue-700 px-20 py-20">
+    <div>
+      <div class="flex">
+        <!-- Image 1 -->
+        <div class="flex-1 px-10 py-5">
+          <img
+            src="assets/location.png"
+            alt="Test 1"
+            class="w-20 h-20 object-cover rounded-full transition-transform duration-300 hover:scale-110 hover:rotate-180 "
+          />
+          <h3 class="mt-5 font-bold text-white">Nearest Center</h3>
+        </div>
+        <!-- Image 2 -->
+        <div class="flex-1 px-10 py-5">
+          <img
+            src="assets/jar.png"
+            alt="Test 2"
+            class="w-20 h-20 object-cover rounded-full transition-transform duration-300 hover:scale-110 hover:rotate-180"
+          />
+          <h3 class="mt-5 font-bold text-white">Book a Test</h3>
+        </div>
+        <!-- Image 3 -->
+        <div class="flex-1 px-10 py-5">
+          <img
+            src="assets/menu.webp"
+            alt="Test 3"
+            class="w-20 h-20 object-cover rounded-full transition-transform duration-300 hover:scale-110 hover:rotate-180"
+          />
+          <h3 class="mt-5 font-bold text-white">Test Menu</h3>
+        </div>
+        <!-- Image 4 -->
+        <div class="flex-1 px-10 py-5">
+          <img
+            src="assets/report.png"
+            alt="Test 4"
+            class="w-20 h-20 object-cover rounded-full transition-transform duration-300 hover:scale-110 hover:rotate-180"
+          />
+          <h3 class="mt-5 font-bold text-white">Download Report</h3>
+        </div>
+        <!-- Image 5 -->
+        <div class="flex-1 px-10 py-5">
+          <img
+            src="assets/upload.png"
+            alt="Test 5"
+            class="w-20 h-20 object-cover rounded-full transition-transform duration-300 hover:scale-110 hover:rotate-180"
+          />
+          <h3 class="mt-5 font-bold text-white">Upload Prescription</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+ <!-- section data  -->
+
+
+<section id="featured-blog-articles" className="bg-slate-200 text-left px-4 sm:px-10 py-10">
+  <div className="my-12 bg-white rounded-lg px-6 sm:px-20 py-10">
+    <h2 className="text-2xl font-medium mb-6">Featured Blog and Articles</h2>
+    <div className="flex items-center">
+      <ul className="flex space-x-6 overflow-x-scroll scrollbar-hide">
+        <li className="flex-shrink-0">
+          <img
+            src="https://media-blog.lalpathlabs.com/apis/b8b4ab70-6b00-4ccc-88be-76ce072dd565.jfif"
+            alt="Tips for Healthy Living"
+            className="w-62 h-32 object-cover rounded-lg"
+          />
+          <a href="#" className="text-blue-600 hover:underline block mt-2">Blog Post 1</a>
+        </li>
+        <li className="flex-shrink-0">
+          <img
+            src="https://media-blog.lalpathlabs.com/apis/65c2cd2a-9c03-42f7-9711-ffb7fc34e1c7.jpg"
+            alt="Understanding Wellness"
+            className="w-62 h-32 object-cover rounded-lg"
+          />
+          <a href="#" className="text-blue-600 hover:underline block mt-2">Blog Post 2</a>
+        </li>
+        <li className="flex-shrink-0">
+          <img
+            src="https://media-blog.lalpathlabs.com/apis/8fd22372-121d-4fa1-9c28-5d409eca4944.jpg"
+            alt="Managing Stress Effectively"
+            className="w-62 h-32 object-cover rounded-lg"
+          />
+          <a href="#" className="text-blue-600 hover:underline block mt-2">Blog Post 3</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="video" className="bg-slate-200 text-left px-4 sm:px-10 py-10">
+  <div className="my-12 bg-white rounded-lg px-6 sm:px-20 py-10">
+    <h2 className="text-2xl font-medium mb-6">Featured Videos</h2>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <iframe
+          className="w-full h-48 sm:h-64 rounded-lg"
+          src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1"
+          title="Bharat ka Vishwas - Center Near You"
+          frameBorder="0"
+          allowFullScreen
+        ></iframe>
+        <h3 className="mt-4 font-semibold">Bharat ka Vishwas - Center Near You</h3>
+      </div>
+      <div>
+        <iframe
+          className="w-full h-48 sm:h-64 rounded-lg"
+          src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2"
+          title="Bharat ka Vishwas - Timely Report"
+          frameBorder="0"
+          allowFullScreen
+        ></iframe>
+        <h3 className="mt-4 font-semibold">Bharat ka Vishwas - Timely Report</h3>
+      </div>
+      <div>
+        <iframe
+          className="w-full h-48 sm:h-64 rounded-lg"
+          src="https://www.youtube.com/embed/YOUR_VIDEO_ID_3"
+          title="Bharat ka Vishwas - Home Collection"
+          frameBorder="0"
+          allowFullScreen
+        ></iframe>
+        <h3 className="mt-4 font-semibold">Bharat ka Vishwas - Home Collection</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="trusted-healthcare-partner" class="bg-slate-200 px-6 py-10">
+  <div class="bg-white text-left rounded-lg p-8 md:p-16">
+    <h2 class="text-2xl font-semibold text-center mb-6">
+      Dr. Lal PathLabs – Your Most Trusted Healthcare Partner!
+    </h2>
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      
+      <!-- Tests and Packages -->
+      <div class="space-y-6">
+        <h3 class="text-xl font-semibold text-gray-800">Tests and Packages</h3>
+        <ul class="space-y-4 text-gray-700">
+          <li class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-3 text-red-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM12 4c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2zm0 12c-2.485 0-4-1.515-4-4s1.515-4 4-4 4 1.515 4 4-1.515 4-4 4z"></path></svg>
+            <span>Heart</span>
+          </li>
+          <li class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-3 text-green-500" fill="currentColor" viewBox="0 0 24 24"><path d="M14 2C12.895 2 12 2.895 12 4s.895 2 2 2 2-.895 2-2-.895-2-2-2zM14 7H6v2h8V7zM6 11h8v2H6v-2zM14 15H6v2h8v-2zM14 19H6v2h8v-2z"></path></svg>
+            <span>Lungs</span>
+          </li>
+          <li class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-3 text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M5 3c1.658 0 3 1.342 3 3s-1.342 3-3 3S2 7.658 2 6s1.342-3 3-3zm0 4c.552 0 1-.447 1-1S5.552 5 5 5s-1 .447-1 1 .448 1 1 1zM5 15c1.658 0 3 1.342 3 3s-1.342 3-3 3S2 19.658 2 18s1.342-3 3-3zm0 4c.552 0 1-.447 1-1s-.448-1-1-1-1 .447-1 1 .448 1 1 1zM12 9c1.657 0 3-1.342 3-3S13.657 3 12 3s-3 1.342-3 3 1.343 3 3 3zm0 6c1.657 0 3-1.342 3-3s-1.343-3-3-3-3 1.342-3 3 1.343 3 3 3zm7 5c1.658 0 3 1.342 3 3s-1.342 3-3 3-3-1.342-3-3 1.342-3 3-3zm0 4c.552 0 1-.447 1-1s-.448-1-1-1-1 .447-1 1 .448 1 1 1zM17 5c1.657 0 3-1.342 3-3S18.657 0 17 0s-3 1.342-3 3 1.343 3 3 3z"></path></svg>
+            <span>Kidney</span>
+          </li>
+          <li class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-3 text-purple-500" fill="currentColor" viewBox="0 0 24 24"><path d="M11.99 2.04C6.49 2.04 2 6.53 2 11.99s4.49 9.95 9.99 9.95c5.5 0 9.99-4.49 9.99-9.95s-4.49-9.95-9.99-9.95zm0 18c-4.42 0-8.02-3.61-8.02-8.05s3.6-8.04 8.02-8.04c4.42 0 8.02 3.62 8.02 8.04s-3.6 8.05-8.02 8.05z"></path></svg>
+            <span>CBC</span>
+          </li>
+          <li class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-3 text-yellow-500" fill="currentColor" viewBox="0 0 24 24"><path d="M17 6c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2zm0 4c.552 0 1-.447 1-1s-.448-1-1-1-1 .447-1 1 .448 1 1 1z"></path></svg>
+            <span>Thyroid</span>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Information & Features -->
+      <div class="space-y-6">
+        <h3 class="text-xl font-semibold text-gray-800">Information & Features</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li><strong>Samples Collected:</strong> 50 million+</li>
+          <li><strong>Labs:</strong> 280+</li>
+          <li><strong>Patient Service Centres:</strong> 5,500+</li>
+          <li><strong>Number of Customers:</strong> 27 million+</li>
+          <li><strong>Number of Tests:</strong> 5,000+</li>
+          <li><strong>Pick-up Points:</strong> 11,000+</li>
+        </ul>
+      </div>
+      
+      <!-- Promotions & Discounts -->
+      <div class="space-y-6">
+        <h3 class="text-xl font-semibold text-gray-800">Promotions & Discounts</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li>Family Offer on Swasthfit Healthcare Packages</li>
+          <li>Swasth Points for Senior Citizens</li>
+          <li>Home Collection Exclusive Offer</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Faq Question -->
+
+<!-- FAQ Section -->
+<section id="faq" class="bg-slate-200 text-left px-10 py-10">
+  <div class="my-12 bg-white text-left rounded-lg px-20 py-10">
+    <h2 class="text-2xl font-medium">Frequently Asked Questions</h2>
+
+    <!-- Buttons -->
+    <div class="mb-6 px-3 py-5 mt-5">
+      <button
+        onclick="toggleContent('labs-center')"
+        class="btn bg-yellow-400 px-4 py-2 rounded-lg text-black font-bold mr-4"
+      >
+        Labs & Center
+      </button>
+      <button
+        onclick="toggleContent('reports')"
+        class="btn bg-gray-300 hover:bg-yellow-400 px-4 py-2 rounded-lg text-black font-bold mr-4"
+      >
+        Reports
+      </button>
+      <button
+        onclick="toggleContent('test-booking')"
+        class="btn bg-gray-300 hover:bg-yellow-400 px-4 py-2 rounded-lg text-black font-bold mr-4"
+      >
+        Test Booking
+      </button>
+      <button
+        onclick="toggleContent('wellness-package')"
+        class="btn bg-gray-300 hover:bg-yellow-400 px-4 py-2 rounded-lg text-black font-bold mr-4"
+      >
+        Wellness Package
+      </button>
+      <button
+        onclick="toggleContent('patient-wallet')"
+        class="btn bg-gray-300 hover:bg-yellow-400 px-4 py-2 rounded-lg text-black font-bold"
+      >
+        Patient Wallet
+      </button>
+    </div>
+
+    <!-- Content Sections -->
+    <div id="labs-center" class="content-section hidden">
+      <ul>
+        <li>Information about Labs & Center.</li>
+        <li>Details about Labs & Center.</li>
+      </ul>
+    </div>
+    <div id="reports" class="content-section hidden">
+      <ul>
+        <li>Information on Reports.</li>
+      </ul>
+    </div>
+    <div id="test-booking" class="content-section hidden">
+      <ul>
+        <li>Instructions for Test Booking.</li>
+      </ul>
+    </div>
+    <div id="wellness-package" class="content-section hidden">
+      <ul>
+        <li>Details about Wellness Packages.</li>
+      </ul>
+    </div>
+    <div id="patient-wallet" class="content-section hidden">
+      <ul>
+        <li>Information on Patient Wallet.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="lab-test-at-home" class="bg-slate-200 text-left px-10 py-10">
+  <div class="bg-white text-left rounded-lg px-20 py-10">
+    <h2 class="text-2xl font-medium mb-4">Lab Test At Home</h2>
+
+    <ul class="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-8 gap-2">
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Agartala">Agartala</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Agra">Agra</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Ahmedabad">Ahmedabad</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Aligarh">Aligarh</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Allahabad">Allahabad</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Alwar">Alwar</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Ambala">Ambala</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Amravati">Amravati</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Amritsar">Amritsar</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Anand">Anand</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Anantapur">Anantapur</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Asansol">Asansol</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Aurangabad">Aurangabad</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Bareilly">Bareilly</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Bhopal">Bhopal</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Bhubaneswar">Bhubaneswar</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Bikaner">Bikaner</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Bilaspur">Bilaspur</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Brajrajnagar">Brajrajnagar</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Chandigarh">Chandigarh</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Chennai">Chennai</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Coimbatore">Coimbatore</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Cuttack">Cuttack</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Dehradun">Dehradun</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Dhanbad">Dhanbad</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Delhi">Delhi</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Dharwad">Dharwad</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Durgapur">Durgapur</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Gandhinagar">Gandhinagar</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Guntur">Guntur</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Gurgaon">Gurgaon</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Hubli-Dharwad">Hubli-Dharwad</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Hisar">Hisar</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Indore">Indore</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Jabalpur">Jabalpur</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Jalandhar">Jalandhar</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Jodhpur">Jodhpur</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Kanpur">Kanpur</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Karnataka">Karnataka</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Kolhapur">Kolhapur</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Kota">Kota</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Lucknow">Lucknow</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Ludhiana">Ludhiana</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Madurai">Madurai</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Mumbai">Mumbai</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Mysore">Mysore</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Nagpur">Nagpur</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Nashik">Nashik</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Nellore">Nellore</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Patna">Patna</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Pondicherry">Pondicherry</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Pune">Pune</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Ranchi">Ranchi</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Salem">Salem</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Surat">Surat</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Trivandram">Trivandram</a></li>
+      <!-- <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Vadodara">Vadodara</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Vijayawada">Vijayawada</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Vishakhapatnam">Vishakhapatnam</a></li> -->
+      <!-- <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Vitamins and Supplements">Vitamins and Supplements</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Vitamin Supplements">Vitamin Supplements</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Whole Foods Market">Whole Foods Market</a></li> -->
+      <!-- <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Yamuna Nagar">Yamuna Nagar</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Yavatmal">Yavatmal</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Yawalpur">Yawalpur</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Yelahanka">Yelahanka</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Yelavana">Yelavana</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Yelbarga">Yelbarga</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Yerawada">Yerawada</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Yercaud">Yercaud</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Yelgumba">Yelgumba</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Yerwada">Yerwada</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Yevatmal">Yevatmal</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Yerwada">Yerwada</a></li> -->
+
+      
+      <!-- Add other cities similarly -->
+    </ul>
+  </div>
+</section>
+
+
+<section id="popular-tests" class="bg-slate-200 text-left px-10 py-10">
+  <div class="my-12 bg-white text-left rounded-lg px-10 py-10">
+    <h2 class="text-2xl font-medium mb-6">Popular Tests</h2>
+    <ul class="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-7 gap-2">
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Pregnancy Test</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Full Body Checkups</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Covid 19 Test</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Heart Test</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Kidney Test</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Liver Test</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">CBC Test</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Cholesterol Test</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">HbA1c Test</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Hepatitis B Test</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Kidney Function Test</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Liver Function Test</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Sugar Test</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Thyroid Test</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Typhoid Test</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Uric Acid Test</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Vitamin B12 Test</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Vitamin D Test</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Allergy Test</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Arthritis Test</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Cancer Test</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Bone And Joint</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Dengue Test</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Diabetes Test</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Rheumatoid Test</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Tuberculosis Test</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Infertility Test</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Diabetes Care</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Anemia Test</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">GastroIntestinal</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Autoimmune Disorders</a></li>
+      <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Fever Test</a></li>
+    </ul>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+Footer 
+
+<div class="bg-yellow-400">
+  <!-- Upper Footer -->
+  <div class="container bg-yellow-400">
+    <div class="my-12 text-left rounded-lg px-4 py-10 md:px-20">
+      <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-8">
+        <!-- Patients Section -->
+        <div>
+          <h1 class="font-bold mb-5">PATIENTS</h1>
+          <ul>
+            <li>Book a Test</li>
+            <li>Nearest Centre</li>
+            <li>Download Report</li>
+            <li>Download App</li>
+            <li>Promotions & Discounts</li>
+            <li>Special Program</li>
+          </ul>
+        </div>
+        <!-- Doctors Section -->
+        <div>
+          <h1 class="font-bold mb-5">DOCTORS</h1>
+          <ul>
+            <li>Test Menu</li>
+            <li>Our Labs</li>
+            <li>Reviews & Ratings</li>
+            <li>Events</li>
+            <li>Quality</li>
+            <li>Resources Center</li>
+            <li>Our Departments</li>
+          </ul>
+        </div>
+        <!-- Business Partnership Section -->
+        <div>
+          <h1 class="font-bold mb-5">BUSINESS PARTNERSHIP</h1>
+          <ul>
+            <li>Partner With Us</li>
+            <li>Become a Vendor</li>
+            <li>Corporate Tie-up</li>
+            <li>International Partnership</li>
+            <li>Corporate Covid Testing</li>
+          </ul>
+        </div>
+        <!-- About Us Section -->
+        <div>
+          <h1 class="font-bold mb-5">ABOUT US</h1>
+          <ul>
+            <li>Our Journey</li>
+            <li>Vision, Mission & Values</li>
+            <li>Our Team</li>
+            <li>Our Network</li>
+            <li>Logistics Strength</li>
+            <li>CSR</li>
+            <li>Career</li>
+          </ul>
+        </div>
+        <!-- Investors Section -->
+        <div>
+          <h1 class="font-bold mb-5">INVESTORS</h1>
+          <ul>
+            <li>Financials</li>
+            <li>Investors Information</li>
+            <li>Corporate Governance</li>
+            <li>Smart ODR</li>
+            <li>SEBI Scores</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lower Footer -->
+  <div class="flex flex-col sm:flex-row justify-between bg-blue-800 px-4 py-10 md:px-20">
+    <div class="text-justify gap-4">
+      <p class="text-white text-md font-bold">© 2024 PathLabs. All Rights Reserved.</p>
+      <p class="text-white text-sm hover:text-yellow-500 cursor-pointer">Privacy Policy | Terms of Service</p>
+      <p class="text-white text-sm mt-2">
+        PathLabs is a trusted leader in healthcare diagnostics,
+        offering comprehensive testing and medical services to support your health journey.
+        We are committed to delivering accurate, timely, and accessible diagnostic services with a focus on quality,
+        innovation, and patient care.
+      </p>
+      <p class="text-white text-sm mt-3">Made with <span class="text-red-500">❤️</span> by Yash</p>
+    </div>
+
+    <div class="flex justify-between items-center gap-4 mt-4 sm:mt-0">
+      <div class="flex gap-4">
+        <h2 class="text-white font-bold">Follow Us on</h2>
+        <a href="https://www.facebook.com/pathlabsindia/" aria-label="Facebook">
+          <svg class="text-yellow-300 hover:text-white" width="30" height="30"><use xlink:href="#fa-facebook"></use></svg>
+        </a>
+        <a href="https://www.instagram.com/pathlabsindia/" aria-label="Instagram">
+          <svg class="text-yellow-300 hover:text-pink-500" width="30" height="30"><use xlink:href="#fa-instagram"></use></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/pathlabs-india/" aria-label="LinkedIn">
+          <svg class="text-yellow-300 hover:text-white" width="30" height="30"><use xlink:href="#fa-linkedin"></use></svg>
+        </a>
+        <a href="https://www.youtube.com/channel/UCk7-W8e-z7j_f0-X53q-7lQ" aria-label="YouTube">
+          <svg class="text-yellow-300 hover:text-red-500" width="30" height="30"><use xlink:href="#fa-youtube"></use></svg>
+        </a>
+        <a href="https://twitter.com/pathlabsindia" aria-label="Twitter">
+          <svg class="text-yellow-300 hover:text-blue-400" width="30" height="30"><use xlink:href="#fa-twitter"></use></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      modules: [Swiper.Navigation, Swiper.Pagination, Swiper.Autoplay],
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      spaceBetween: 50,
+      slidesPerView: 1,
+    });
+
+
+
+
+
+
+
+
+
+ // JavaScript to toggle visibility of content sections
+  function toggleContent(id) {
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach((section) => {
+      if (section.id === id) {
+        section.classList.toggle('hidden');
+      } else {
+        section.classList.add('hidden');
+      }
+    });
+  }
+  </script>
+
+
+</body>
+</html>
