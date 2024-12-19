@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Diagnostic Center and Pathology</title>
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -40,20 +41,20 @@
     </div>
 
     <!-- Sub Navbar -->
-    <div class="bg-white flex items-center justify-between px-4 md:px-6 py-4 shadow-md">
-      <img src="https://uat-cdn.drlallab.com/2023-06/logo-header-2.webp" alt="Logo" class="h-10 md:h-12 pr-8">
+    <!-- <div class="bg-white flex items-center justify-between px-4 md:px-6 py-4  shadow-md">
+      <img src="https://uat-cdn.drlallab.com/2023-06/logo-header-2.webp" alt="Logo" class="h-20  md:h-12 pr-8"> -->
 
       <!-- Links -->
-      <div class="flex justify-center md:justify-start space-x-4 lg:space-x-8 text-gray-700 text-sm">
+      <!-- <div class="flex justify-center md:justify-start space-x-4 lg:space-x-8 text-gray-700 text-sm">
         <a href="#" class="hover:text-gray-950">Book a Test</a>
         <a href="#" class="hover:text-gray-950">Nearest Center</a>
         <a href="#" class="hover:text-gray-950">Download Report</a>
         <a href="#" class="hover:text-gray-950">Special Programs</a>
         <a href="#" class="hover:text-gray-950">Promotions & Discounts</a>
-      </div>
+      </div> -->
 
       <!-- Search Inputs -->
-      <div class="flex items-center space-x-2 ">
+      <!-- <div class="flex items-center space-x-2 ">
         <span class="text-gray-600 hidden sm:inline ">Delhi</span>
         <div class="relative">
           <input type="text" placeholder="Search Location" class="border border-gray-300 rounded p-2 pl-8 ">
@@ -67,10 +68,10 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 10a5 5 0 100-10 5 5 0 000 10z" />
           </svg>
         </div>
-      </div>
+      </div> -->
 
       <!-- Cart and ABHA Button -->
-      <div class="flex items-center space-x-4">
+      <!-- <div class="flex items-center space-x-4">
         <div class="relative">
           <svg class="text-2xl text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 12h12l3-12H3z" />
@@ -80,7 +81,104 @@
         <button class="bg-blue-600 text-white px-4 py-2 rounded text-sm">Create/Link Your ABHA</button>
       </div>
     </div>
+  </div> -->
+
+
+
+  <div class="bg-white flex flex-wrap items-center justify-between px-4 md:px-6 py-4 shadow-md">
+    <!-- Logo -->
+    <img
+      src="https://uat-cdn.drlallab.com/2023-06/logo-header-2.webp"
+      alt="Logo"
+      class="h-12 md:h-12 pr-8"
+    />
+  
+    <!-- Links -->
+    <div class="hidden lg:flex justify-center md:justify-start space-x-4 lg:space-x-8 text-gray-700 text-sm">
+      <a href="#" class="hover:text-gray-950">Book a Test</a>
+      <a href="#" class="hover:text-gray-950">Nearest Center</a>
+      <a href="#" class="hover:text-gray-950">Download Report</a>
+      <a href="#" class="hover:text-gray-950">Special Programs</a>
+      <a href="#" class="hover:text-gray-950">Promotions & Discounts</a>
+    </div>
+  
+    <!-- Search Inputs -->
+    <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-2 mt-4 lg:mt-0">
+      <span class="text-gray-600 hidden sm:inline">Delhi</span>
+      <div class="relative w-full sm:w-auto">
+        <input
+          type="text"
+          placeholder="Search Location"
+          class="border border-gray-300 rounded p-2 pl-8 w-full"
+        />
+        <svg
+          class="absolute left-2 top-3 text-gray-500 w-5 h-5"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M10 10a5 5 0 100-10 5 5 0 000 10z"
+          />
+        </svg>
+      </div>
+      <div class="relative w-full sm:w-auto">
+        <input
+          type="text"
+          placeholder="Search Test & Package"
+          class="border border-gray-300 rounded p-2 pl-8 w-full"
+        />
+        <svg
+          class="absolute left-2 top-3 text-gray-500 w-5 h-5"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M10 10a5 5 0 100-10 5 5 0 000 10z"
+          />
+        </svg>
+      </div>
+    </div>
+  
+    <!-- Cart and ABHA Button -->
+    <div class="flex items-center space-x-4 mt-4 lg:mt-0">
+      <div class="relative">
+        <svg
+          class="text-2xl text-gray-700"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3 6l3 12h12l3-12H3z"
+          />
+        </svg>
+        <span
+          class="absolute -top-2 -right-2 bg-blue-600 text-white text-xs rounded-full px-2"
+          >0</span
+        >
+      </div>
+      <button
+        class="bg-blue-600 text-white px-4 py-2 rounded text-sm w-full lg:w-auto"
+      >
+        Create/Link Your ABHA
+      </button>
+    </div>
   </div>
+  
 
 
 
@@ -146,57 +244,61 @@
 
 <!-- sec with images  -->
 
-<section class="bg-blue-700 px-20 py-20">
-    <div>
-      <div class="flex">
-        <!-- Image 1 -->
-        <div class="flex-1 px-10 py-5">
-          <img
-            src="assets/location.png"
-            alt="Test 1"
-            class="w-20 h-20 object-cover rounded-full transition-transform duration-300 hover:scale-110 hover:rotate-180 "
-          />
-          <h3 class="mt-5 font-bold text-white">Nearest Center</h3>
-        </div>
-        <!-- Image 2 -->
-        <div class="flex-1 px-10 py-5">
-          <img
-            src="assets/jar.png"
-            alt="Test 2"
-            class="w-20 h-20 object-cover rounded-full transition-transform duration-300 hover:scale-110 hover:rotate-180"
-          />
-          <h3 class="mt-5 font-bold text-white">Book a Test</h3>
-        </div>
-        <!-- Image 3 -->
-        <div class="flex-1 px-10 py-5">
-          <img
-            src="assets/menu.webp"
-            alt="Test 3"
-            class="w-20 h-20 object-cover rounded-full transition-transform duration-300 hover:scale-110 hover:rotate-180"
-          />
-          <h3 class="mt-5 font-bold text-white">Test Menu</h3>
-        </div>
-        <!-- Image 4 -->
-        <div class="flex-1 px-10 py-5">
-          <img
-            src="assets/report.png"
-            alt="Test 4"
-            class="w-20 h-20 object-cover rounded-full transition-transform duration-300 hover:scale-110 hover:rotate-180"
-          />
-          <h3 class="mt-5 font-bold text-white">Download Report</h3>
-        </div>
-        <!-- Image 5 -->
-        <div class="flex-1 px-10 py-5">
-          <img
-            src="assets/upload.png"
-            alt="Test 5"
-            class="w-20 h-20 object-cover rounded-full transition-transform duration-300 hover:scale-110 hover:rotate-180"
-          />
-          <h3 class="mt-5 font-bold text-white">Upload Prescription</h3>
-        </div>
+
+
+<section class="bg-blue-700 px-5 py-10 md:px-10 lg:px-20">
+  <div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+      <!-- Image 1 -->
+      <div class="text-center">
+        <img
+          src="assets/location.png"
+          alt="Test 1"
+          class="w-20 h-20 mx-auto object-cover rounded-full transition-transform duration-300 hover:scale-110 hover:rotate-180"
+        />
+        <h3 class="mt-5 font-bold text-white">Nearest Center</h3>
+      </div>
+      <!-- Image 2 -->
+      <div class="text-center">
+        <img
+          src="assets/jar.png"
+          alt="Test 2"
+          class="w-20 h-20 mx-auto object-cover rounded-full transition-transform duration-300 hover:scale-110 hover:rotate-180"
+        />
+        <h3 class="mt-5 font-bold text-white">Book a Test</h3>
+      </div>
+      <!-- Image 3 -->
+      <div class="text-center">
+        <img
+          src="assets/menu.webp"
+          alt="Test 3"
+          class="w-20 h-20 mx-auto object-cover rounded-full transition-transform duration-300 hover:scale-110 hover:rotate-180"
+        />
+        <h3 class="mt-5 font-bold text-white">Test Menu</h3>
+      </div>
+      <!-- Image 4 -->
+      <div class="text-center">
+        <img
+          src="assets/report.png"
+          alt="Test 4"
+          class="w-20 h-20 mx-auto object-cover rounded-full transition-transform duration-300 hover:scale-110 hover:rotate-180"
+        />
+        <h3 class="mt-5 font-bold text-white">Download Report</h3>
+      </div>
+      <!-- Image 5 -->
+      <div class="text-center">
+        <img
+          src="assets/upload.png"
+          alt="Test 5"
+          class="w-20 h-20 mx-auto object-cover rounded-full transition-transform duration-300 hover:scale-110 hover:rotate-180"
+        />
+        <h3 class="mt-5 font-bold text-white">Upload Prescription</h3>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+
 
 
 
@@ -208,73 +310,65 @@
  <!-- section data  -->
 
 
-<section id="featured-blog-articles" className="bg-slate-200 text-left px-4 sm:px-10 py-10">
-  <div className="my-12 bg-white rounded-lg px-6 sm:px-20 py-10">
-    <h2 className="text-2xl font-medium mb-6">Featured Blog and Articles</h2>
-    <div className="flex items-center">
-      <ul className="flex space-x-6 overflow-x-scroll scrollbar-hide">
-        <li className="flex-shrink-0">
+<section id="featured-blog-articles" class="bg-slate-200 text-left px-4 sm:px-10 py-10">
+  <div class="my-12 bg-white rounded-lg px-6 sm:px-20 py-10">
+    <h2 class="text-2xl font-medium mb-6">Featured Blog and Articles</h2>
+    <div class="flex items-center">
+      <ul class="flex space-x-6 overflow-x-scroll scrollbar-hide">
+        <li class="flex-shrink-0">
           <img
             src="https://media-blog.lalpathlabs.com/apis/b8b4ab70-6b00-4ccc-88be-76ce072dd565.jfif"
             alt="Tips for Healthy Living"
-            className="w-62 h-32 object-cover rounded-lg"
+            class="w-62 h-32 object-cover rounded-lg"
           />
-          <a href="#" className="text-blue-600 hover:underline block mt-2">Blog Post 1</a>
+          <a href="#" class="text-blue-600 hover:underline block mt-2">Blog Post 1</a>
         </li>
-        <li className="flex-shrink-0">
+        <li class="flex-shrink-0">
           <img
             src="https://media-blog.lalpathlabs.com/apis/65c2cd2a-9c03-42f7-9711-ffb7fc34e1c7.jpg"
             alt="Understanding Wellness"
-            className="w-62 h-32 object-cover rounded-lg"
+            class="w-62 h-32 object-cover rounded-lg"
           />
-          <a href="#" className="text-blue-600 hover:underline block mt-2">Blog Post 2</a>
+          <a href="#" class="text-blue-600 hover:underline block mt-2">Blog Post 2</a>
         </li>
-        <li className="flex-shrink-0">
+        <li class="flex-shrink-0">
           <img
             src="https://media-blog.lalpathlabs.com/apis/8fd22372-121d-4fa1-9c28-5d409eca4944.jpg"
             alt="Managing Stress Effectively"
-            className="w-62 h-32 object-cover rounded-lg"
+            class="w-62 h-32 object-cover rounded-lg"
           />
-          <a href="#" className="text-blue-600 hover:underline block mt-2">Blog Post 3</a>
+          <a href="#" class="text-blue-600 hover:underline block mt-2">Blog Post 3</a>
         </li>
       </ul>
     </div>
   </div>
 </section>
 
-<section id="video" className="bg-slate-200 text-left px-4 sm:px-10 py-10">
-  <div className="my-12 bg-white rounded-lg px-6 sm:px-20 py-10">
-    <h2 className="text-2xl font-medium mb-6">Featured Videos</h2>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+<section id="video" class="bg-slate-200 text-left px-4 px-10 py-10">
+  <div class="my-12 bg-white rounded-lg px-6 sm:px-20 py-10">
+    <h2 class="text-2xl font-medium mb-6">Featured Videos</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div>
         <iframe
-          className="w-full h-48 sm:h-64 rounded-lg"
-          src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1"
-          title="Bharat ka Vishwas - Center Near You"
-          frameBorder="0"
-          allowFullScreen
-        ></iframe>
-        <h3 className="mt-4 font-semibold">Bharat ka Vishwas - Center Near You</h3>
+          class="w-full h-48 sm:h-64 rounded-lg"
+           src="https://www.youtube.com/embed/KvBWgjRUnnY" title="Bharat Ka Vishwas - Dr Lal PathLabs - Centre Near You – Hindi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </iframe>
+        <h3 class="mt-4 font-semibold">Bharat ka Vishwas - Center Near You</h3>
       </div>
       <div>
         <iframe
-          className="w-full h-48 sm:h-64 rounded-lg"
-          src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2"
-          title="Bharat ka Vishwas - Timely Report"
-          frameBorder="0"
-          allowFullScreen
-        ></iframe>
-        <h3 className="mt-4 font-semibold">Bharat ka Vishwas - Timely Report</h3>
+          class="w-full h-48 sm:h-64 rounded-lg"
+    src="https://www.youtube.com/embed/vtlsJelJ_3U" title="Bharat Ka Vishwas - Dr Lal PathLabs - Timely Report - Hindi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+        </iframe>
+        <h3 class="mt-4 font-semibold">Bharat ka Vishwas - Timely Report</h3>
       </div>
       <div>
         <iframe
-          className="w-full h-48 sm:h-64 rounded-lg"
-          src="https://www.youtube.com/embed/YOUR_VIDEO_ID_3"
-          title="Bharat ka Vishwas - Home Collection"
-          frameBorder="0"
-          allowFullScreen
-        ></iframe>
-        <h3 className="mt-4 font-semibold">Bharat ka Vishwas - Home Collection</h3>
+          class="w-full h-48 sm:h-64 rounded-lg"
+         src="https://www.youtube.com/embed/ht_JoMzeJjE" title="Bharat Ka Vishwas - Dr Lal PathLabs - Home Collection - Punjabi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </iframe>
+        <h3 class="mt-4 font-semibold">Bharat ka Vishwas - Home Collection</h3>
       </div>
     </div>
   </div>
@@ -347,33 +441,35 @@
 <!-- Faq Question -->
 
 <!-- FAQ Section -->
-<section id="faq" class="bg-slate-200 text-left px-10 py-10">
-  <div class="my-12 bg-white text-left rounded-lg px-20 py-10">
+<section id="faq" class="bg-slate-200 text-left px-4 sm:px-10 py-10">
+  <div class="my-12 bg-white text-left rounded-lg px-6 sm:px-20 py-10">
     <h2 class="text-2xl font-medium">Frequently Asked Questions</h2>
 
     <!-- Buttons -->
-    <div class="mb-6 px-3 py-5 mt-5">
+    <div
+      class="flex flex-wrap justify-start gap-4 mt-5 px-3 py-5"
+    >
       <button
         onclick="toggleContent('labs-center')"
-        class="btn bg-yellow-400 px-4 py-2 rounded-lg text-black font-bold mr-4"
+        class="btn bg-yellow-400 px-4 py-2 rounded-lg text-black font-bold"
       >
         Labs & Center
       </button>
       <button
         onclick="toggleContent('reports')"
-        class="btn bg-gray-300 hover:bg-yellow-400 px-4 py-2 rounded-lg text-black font-bold mr-4"
+        class="btn bg-gray-300 hover:bg-yellow-400 px-4 py-2 rounded-lg text-black font-bold"
       >
         Reports
       </button>
       <button
         onclick="toggleContent('test-booking')"
-        class="btn bg-gray-300 hover:bg-yellow-400 px-4 py-2 rounded-lg text-black font-bold mr-4"
+        class="btn bg-gray-300 hover:bg-yellow-400 px-4 py-2 rounded-lg text-black font-bold"
       >
         Test Booking
       </button>
       <button
         onclick="toggleContent('wellness-package')"
-        class="btn bg-gray-300 hover:bg-yellow-400 px-4 py-2 rounded-lg text-black font-bold mr-4"
+        class="btn bg-gray-300 hover:bg-yellow-400 px-4 py-2 rounded-lg text-black font-bold"
       >
         Wellness Package
       </button>
@@ -415,97 +511,81 @@
   </div>
 </section>
 
-<section id="lab-test-at-home" class="bg-slate-200 text-left px-10 py-10">
-  <div class="bg-white text-left rounded-lg px-20 py-10">
-    <h2 class="text-2xl font-medium mb-4">Lab Test At Home</h2>
 
-    <ul class="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-8 gap-2">
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Agartala">Agartala</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Agra">Agra</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Ahmedabad">Ahmedabad</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Aligarh">Aligarh</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Allahabad">Allahabad</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Alwar">Alwar</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Ambala">Ambala</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Amravati">Amravati</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Amritsar">Amritsar</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Anand">Anand</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Anantapur">Anantapur</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Asansol">Asansol</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Aurangabad">Aurangabad</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Bareilly">Bareilly</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Bhopal">Bhopal</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Bhubaneswar">Bhubaneswar</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Bikaner">Bikaner</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Bilaspur">Bilaspur</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Brajrajnagar">Brajrajnagar</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Chandigarh">Chandigarh</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Chennai">Chennai</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Coimbatore">Coimbatore</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Cuttack">Cuttack</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Dehradun">Dehradun</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Dhanbad">Dhanbad</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Delhi">Delhi</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Dharwad">Dharwad</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Durgapur">Durgapur</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Gandhinagar">Gandhinagar</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Guntur">Guntur</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Gurgaon">Gurgaon</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Hubli-Dharwad">Hubli-Dharwad</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Hisar">Hisar</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Indore">Indore</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Jabalpur">Jabalpur</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Jalandhar">Jalandhar</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Jodhpur">Jodhpur</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Kanpur">Kanpur</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Karnataka">Karnataka</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Kolhapur">Kolhapur</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Kota">Kota</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Lucknow">Lucknow</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Ludhiana">Ludhiana</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Madurai">Madurai</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Mumbai">Mumbai</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Mysore">Mysore</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Nagpur">Nagpur</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Nashik">Nashik</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Nellore">Nellore</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Patna">Patna</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Pondicherry">Pondicherry</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Pune">Pune</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Ranchi">Ranchi</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Salem">Salem</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Surat">Surat</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Trivandram">Trivandram</a></li>
-      <!-- <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Vadodara">Vadodara</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Vijayawada">Vijayawada</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Vishakhapatnam">Vishakhapatnam</a></li> -->
-      <!-- <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Vitamins and Supplements">Vitamins and Supplements</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Vitamin Supplements">Vitamin Supplements</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Whole Foods Market">Whole Foods Market</a></li> -->
-      <!-- <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Yamuna Nagar">Yamuna Nagar</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Yavatmal">Yavatmal</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Yawalpur">Yawalpur</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Yelahanka">Yelahanka</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Yelavana">Yelavana</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Yelbarga">Yelbarga</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Yerawada">Yerawada</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Yercaud">Yercaud</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Yelgumba">Yelgumba</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Yerwada">Yerwada</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Yevatmal">Yevatmal</a></li>
-      <li><a href="#" class="text-black hover:text-blue-600 hover:underline" aria-label="Yerwada">Yerwada</a></li> -->
+<!-- lab test at home  -->
 
-      
-      <!-- Add other cities similarly -->
+<section id="lab-test-at-home" class="bg-slate-200 text-left px-6 py-10">
+  <div class="bg-white text-left rounded-lg px-6 py-10">
+    <h2 class="text-2xl font-medium mb-4 text-center sm:text-left">Lab Test At Home</h2>
+    <ul class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Agartala">Agartala</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Agra">Agra</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Ahmedabad">Ahmedabad</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Aligarh">Aligarh</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Allahabad">Allahabad</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Alwar">Alwar</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Ambala">Ambala</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Amravati">Amravati</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Amritsar">Amritsar</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Anand">Anand</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Anantapur">Anantapur</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Asansol">Asansol</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Aurangabad">Aurangabad</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Bareilly">Bareilly</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Bhopal">Bhopal</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Bhubaneswar">Bhubaneswar</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Bikaner">Bikaner</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Bilaspur">Bilaspur</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Brajrajnagar">Brajrajnagar</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Chandigarh">Chandigarh</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Chennai">Chennai</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Coimbatore">Coimbatore</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Cuttack">Cuttack</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Dehradun">Dehradun</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Dhanbad">Dhanbad</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Delhi">Delhi</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Dharwad">Dharwad</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Durgapur">Durgapur</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Gandhinagar">Gandhinagar</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Guntur">Guntur</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Gurgaon">Gurgaon</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Hubli-Dharwad">Hubli-Dharwad</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Hisar">Hisar</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Indore">Indore</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Jabalpur">Jabalpur</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Jalandhar">Jalandhar</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Jodhpur">Jodhpur</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Kanpur">Kanpur</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Karnataka">Karnataka</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Kolhapur">Kolhapur</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Kota">Kota</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Lucknow">Lucknow</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Ludhiana">Ludhiana</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Madurai">Madurai</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Mumbai">Mumbai</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Mysore">Mysore</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Nagpur">Nagpur</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Nashik">Nashik</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Nellore">Nellore</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Patna">Patna</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Pondicherry">Pondicherry</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Pune">Pune</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Ranchi">Ranchi</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Salem">Salem</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Surat">Surat</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Udaipur">Udaipur</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Vadodara">Vadodara</a></li>
+      <li><a href="#" class="text-black hover:text-blue-600 hover:underline text-center" aria-label="Varanasi">Varanasi</a></li>
     </ul>
   </div>
 </section>
 
 
-<section id="popular-tests" class="bg-slate-200 text-left px-10 py-10">
+
+<section id="popular-tests" class="bg-slate-200 text-left px-10 py-10 sm:px-5">
   <div class="my-12 bg-white text-left rounded-lg px-10 py-10">
     <h2 class="text-2xl font-medium mb-6">Popular Tests</h2>
-    <ul class="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-7 gap-2">
+    <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2">
       <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Pregnancy Test</a></li>
       <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Full Body Checkups</a></li>
       <li><a href="#" class="text-black hover:text-blue-800 hover:underline">Covid 19 Test</a></li>
@@ -545,16 +625,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-Footer 
+<!-- Footer  -->
 
 <div class="bg-yellow-400">
   <!-- Upper Footer -->
@@ -627,39 +698,41 @@ Footer
 
   <!-- Lower Footer -->
   <div class="flex flex-col sm:flex-row justify-between bg-blue-800 px-4 py-10 md:px-20">
-    <div class="text-justify gap-4">
+    <!-- Left Side Content -->
+    <div class="text-justify gap-4 mb-6 sm:mb-0">
       <p class="text-white text-md font-bold">© 2024 PathLabs. All Rights Reserved.</p>
       <p class="text-white text-sm hover:text-yellow-500 cursor-pointer">Privacy Policy | Terms of Service</p>
-      <p class="text-white text-sm mt-2">
-        PathLabs is a trusted leader in healthcare diagnostics,
-        offering comprehensive testing and medical services to support your health journey.
-        We are committed to delivering accurate, timely, and accessible diagnostic services with a focus on quality,
+      <p class="text-white text-sm mt-2"> 
+        We are committed to delivering accurate, <br>timely, and accessible diagnostic services with a <br> focus on quality,
         innovation, and patient care.
       </p>
       <p class="text-white text-sm mt-3">Made with <span class="text-red-500">❤️</span> by Yash</p>
     </div>
-
-    <div class="flex justify-between items-center gap-4 mt-4 sm:mt-0">
-      <div class="flex gap-4">
+  
+    <!-- Right Side: Social Media Links -->
+    <div class="flex justify-between items-center gap-4 sm:gap-8 sm:mt-0">
+      <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
         <h2 class="text-white font-bold">Follow Us on</h2>
+        <!-- Font Awesome Icons -->
         <a href="https://www.facebook.com/pathlabsindia/" aria-label="Facebook">
-          <svg class="text-yellow-300 hover:text-white" width="30" height="30"><use xlink:href="#fa-facebook"></use></svg>
+          <i class="fab fa-facebook text-yellow-300 hover:text-white text-2xl sm:text-3xl"></i>
         </a>
         <a href="https://www.instagram.com/pathlabsindia/" aria-label="Instagram">
-          <svg class="text-yellow-300 hover:text-pink-500" width="30" height="30"><use xlink:href="#fa-instagram"></use></svg>
+          <i class="fab fa-instagram text-yellow-300 hover:text-pink-500 text-2xl sm:text-3xl"></i>
         </a>
         <a href="https://www.linkedin.com/company/pathlabs-india/" aria-label="LinkedIn">
-          <svg class="text-yellow-300 hover:text-white" width="30" height="30"><use xlink:href="#fa-linkedin"></use></svg>
+          <i class="fab fa-linkedin text-yellow-300 hover:text-white text-2xl sm:text-3xl"></i>
         </a>
         <a href="https://www.youtube.com/channel/UCk7-W8e-z7j_f0-X53q-7lQ" aria-label="YouTube">
-          <svg class="text-yellow-300 hover:text-red-500" width="30" height="30"><use xlink:href="#fa-youtube"></use></svg>
+          <i class="fab fa-youtube text-yellow-300 hover:text-red-500 text-2xl sm:text-3xl"></i>
         </a>
         <a href="https://twitter.com/pathlabsindia" aria-label="Twitter">
-          <svg class="text-yellow-300 hover:text-blue-400" width="30" height="30"><use xlink:href="#fa-twitter"></use></svg>
+          <i class="fab fa-twitter text-yellow-300 hover:text-blue-400 text-2xl sm:text-3xl"></i>
         </a>
       </div>
     </div>
   </div>
+  
 </div>
 
 
